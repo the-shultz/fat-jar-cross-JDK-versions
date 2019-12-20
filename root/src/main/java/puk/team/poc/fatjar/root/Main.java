@@ -14,7 +14,7 @@ public class Main {
         System.out.println(hello.saySomething("world"));
 
         StringToFileProducer writer = new StringToFileProducer();
-        Path fullPath = Paths.get("c:\\test.txt");
+        Path fullPath = Paths.get("c:\\tmp\\test.txt");
         writer.createFileWithDirectories(fullPath,"this is a test");
         System.out.println(writer.readFileContent(fullPath));
         writer.deletePathWhatsoever(fullPath);
